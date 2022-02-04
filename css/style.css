@@ -353,8 +353,10 @@ justify-content: space-between;
         grid-column: 1;
     }
 
-
-}
+    .footer .grid {
+        text-align: center;
+    
+    }
 
 /* Mobile */
 @media(max-width: 500px) {
@@ -369,5 +371,9 @@ justify-content: space-between;
     .navbar ul {
         padding: 10px;
         background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .footer .grid {
+        text-align: center;
     }
 }
