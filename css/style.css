@@ -51,6 +51,11 @@ code, pre {
     padding: 10px;
 }
 
+.hidden {
+    visibility: hidden;
+    height: 0;
+}
+
 /*Navbar*/
 .navbar {
     background-color: var(--primary-color);
@@ -98,6 +103,10 @@ justify-content: space-between;
     gap: 30px;
 }
 
+.showcase-text {
+    animation: SlideInFromLeft 1s ease-in;
+}
+
 .showcase-form {
     position: relative;
     top: 60px;
@@ -106,6 +115,7 @@ justify-content: space-between;
     padding: 40px;
     z-index: 100;
     justify-self: flex-end;
+    animation: SlideInFromRight 1s ease-in;
 }
 
 .showcase-form .form-control {
@@ -143,6 +153,7 @@ justify-content: space-between;
 /* Stats */
 .stats {
     padding-top: 100px;
+    animation: SlideInFromBottom 1s ease-in;
 }
 
 .stats-heading {
@@ -250,6 +261,47 @@ justify-content: space-between;
     margin: 0 10px;
 }
 
+/* Animations */
+@keyframes SlideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes SlideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes SlideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes SlideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
 /* Tablets and under */
 @media(max-width: 768px) {
     .grid,
@@ -270,12 +322,13 @@ justify-content: space-between;
     .showcase-text {
         text-align: center;
         margin-top: 40px;
-
+        animation: SlideInFromTop 1s ease-in;
     }
 
     .showcase-form {
         justify-self: center;
         margin: auto;
+        animation: SlideInFromBottom 1s ease-in;
     }
 
     .cli .grid > *:first-child {
