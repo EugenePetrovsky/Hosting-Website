@@ -65,6 +65,7 @@ code, pre {
 
 .navbar ul {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .navbar a {
@@ -73,7 +74,7 @@ code, pre {
     margin: 0 5px;
 }
 
-.navbar a:hover {
+.navbar li:hover {
 border-bottom: 2px #fff solid; 
 }
 
@@ -114,7 +115,7 @@ justify-content: space-between;
     width: 400px;
     padding: 40px;
     z-index: 100;
-    justify-self: flex-end;
+    /* justify-self: flex-end; */
     animation: SlideInFromRight 1s ease-in;
 }
 
@@ -359,22 +360,28 @@ justify-content: space-between;
 
     .footer .grid {
         text-align: center;
-    
     }
+}
 
 /* Mobile */
 @media(max-width: 500px) {
     .navbar {
-        height: 110px;
+        height: auto;
     }
 
     .navbar .flex {
         flex-direction: column;
+        padding: 0;
     }
 
     .navbar ul {
         padding: 10px;
+        justify-content: center;
+    }
+
+    .navbar nav {
         background-color: rgba(0, 0, 0, 0.1);
+        width:100%;
     }
 
     .footer .grid {
