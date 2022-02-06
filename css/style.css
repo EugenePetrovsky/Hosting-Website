@@ -68,9 +68,12 @@ code, pre {
     flex-wrap: wrap;
 }
 
+.navbar li {
+    padding: 0 10px;
+}
+
 .navbar a {
     color: #fff;
-    padding: 10px;
     margin: 0 5px;
 }
 
@@ -314,6 +317,14 @@ justify-content: space-between;
     .docs-main .grid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+    }
+
+    .navbar {
+        height: auto;
+    }
+
+    .navbar ul {
+        justify-content: center;
     }
 
     .showcase {
