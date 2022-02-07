@@ -104,7 +104,7 @@ justify-content: space-between;
 .showcase .grid {
     overflow: visible;
     grid-template-columns: 55% 45%;
-    gap: 30px;
+    /* gap: 30px; */
 }
 
 .showcase-text {
