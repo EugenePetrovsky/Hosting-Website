@@ -1,3 +1,4 @@
 # Traversy-Media-Lokuri-Website
- Cloud hosting website
-https://youtu.be/p0bGHP-PXD4
+HTML/CSS Cloud hosting website
+Made by this tutorial https://youtu.be/p0bGHP-PXD4
+Thanks to author: Traversy Media
